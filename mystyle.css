@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#092B40;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.search input {
+  padding: 0.5rem;
+  border: 0.2rem solid goldenrod;
+  border-radius: 1rem;
+  color: rgb(100, 125, 126);
+  margin-right: 0.5rem;
+}
+.btn {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.adjustForm {
+  height: 13vh;
+}
+.result-list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list {
+  padding: 1rem;
+  list-style: none;
+  font-size: 1rem;
+  text-align: left;
+  width: 70%;
+  background-color: white;
+  margin: 1rem;
+}
+.list:hover {
+  border-left: 0.5rem solid goldenrod;
+}
