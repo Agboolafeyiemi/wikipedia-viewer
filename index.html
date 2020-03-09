@@ -12,21 +12,27 @@
     <title>Wikipedia Viewer</title>
   </head>
   <body>
-    <form class="search">
-      <input
-      class="input"
-        type="text"
-        class="search__field"
-        placeholder="Search for words..."
-      />
-      <button class="btn">
-        <!-- <i class="fad fa-search"></i> -->
-        <!-- <svg class="search__icon"> -->
-          <!-- <use href="img/icons.svg"></use>
-      </svg> -->
-        <span>Search</span>
-      </button>
-    </form>
+    <div class="cover">
+      <form class="search">
+        <div class="tb">
+          <div class="td">
+            <input
+              class="input"
+              type="text"
+              class="search__field"
+              placeholder="Search for words..."
+              required
+            />
+          </div>
+          <div class="td" class="s-cover">
+            <button type="submit">
+              <div class="s-circle"></div>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
     <ul class="result-list"></ul>
     <script src="index.js"></script>
   </body>

@@ -8,8 +8,8 @@ class Search {
         `https://en.wikipedia.org/w/api.php?action=query&origin=*&list=search&srsearch=${this.search}&format=json`
       );
       let json = await res.json();
-      this.infor = json.query.search;
-      this.infor.map(data => {
+      this.info = json.query.search;
+      this.info.map(data => {
         displayResult(data);
       });
     } catch (error) {
@@ -18,6 +18,8 @@ class Search {
   }
 }
 let form = document.querySelector(".search");
+let formCover = document.querySelector(".cover");
+
 function renderInput() {
   document.querySelector(".search").addEventListener("submit", e => {
     e.preventDefault();
@@ -30,10 +32,9 @@ const getInput = () => {
   return document.querySelector(".input").value;
 };
 const adjustForm = () => {
-  form.classList.add("adjustForm");
-}
+  formCover.style.top = "10%";
+};
 const controlSearch = () => {
-
   let query = getInput();
   if (query) {
     adjustForm();
