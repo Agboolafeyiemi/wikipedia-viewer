@@ -11,6 +11,7 @@ class Search {
       this.info = json.query.search;
       this.info.map(data => {
         displayResult(data);
+        console.log(data.title)
       });
     } catch (error) {
       alert(error);
@@ -44,10 +45,12 @@ const controlSearch = () => {
   }
 };
 const displayResult = data => {
+  const url = encodeURI(`https://en.wikipedia.org/wiki/${data.title}`);
+
   const markup = `
     <li class="list">
         <div class="div-list">
-            <h4 class="title">${data.title}</h4>
+            <a href= "${url}" class="title">${data.title}</a>
             <p class="snippet">${data.snippet}</p>
         </div>
      </li> 
