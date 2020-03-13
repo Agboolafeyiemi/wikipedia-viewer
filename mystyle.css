@@ -177,3 +177,14 @@ button span:after {
   text-decoration: none;
   border-bottom: 0.1rem solid #e16868;
 }
+@media (max-width: 500px) {
+  .cover {
+  width: 87vw;
+  }
+  input[type="text"] {
+    font-size: 36px;
+  }
+  .result-list{
+    align-items: baseline;
+  }
+}
